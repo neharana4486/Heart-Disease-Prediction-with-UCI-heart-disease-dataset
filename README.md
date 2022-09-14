@@ -12,7 +12,7 @@ The last component of the layout was a button, which was used to trigger the pre
 The second part of a Dash application is the allbacks, which are Python functions that are automatically called by Dash when input is entered to the application (28). Callbacks take one or more inputs by their IDs and create one or more outputs according to the called function. This might mean simply writing out a line of text, making calculations or updating a graph.
 As our application has a form-like layout where we want the system to start processing input values after the user finished entering all of them, thus avoiding the normal reactiveness of Dash, we decided to create a callback using State. In order to do this dash.dependencies Input, Output and State had to be imported from the dash_html_components.
 
-![Example of a number input field and a dropdown menu](https://github.com/neharana4486Heart-Disease-Prediction-with-UCI-heart-disease-dataset/blob/main/example.JPG?raw=true)
+![Example of a number input field and a dropdown menu](https://github.com/neharana4486/Heart-Disease-Prediction-with-UCI-heart-disease-dataset/blob/main/example.JPG?raw=true)
 
 In order to allow the user to trigger the callback when filling in the form has been completed, a submit button was added to the layout. The html.button component has an n_clicks i.e., number of clicks property, which was used to create the second part of the callback, where the output was defined (29).
 
