@@ -12,11 +12,8 @@ The last component of the layout was a button, which was used to trigger the pre
 The second part of a Dash application is the allbacks, which are Python functions that are automatically called by Dash when input is entered to the application (28). Callbacks take one or more inputs by their IDs and create one or more outputs according to the called function. This might mean simply writing out a line of text, making calculations or updating a graph.
 As our application has a form-like layout where we want the system to start processing input values after the user finished entering all of them, thus avoiding the normal reactiveness of Dash, we decided to create a callback using State. In order to do this dash.dependencies Input, Output and State had to be imported from the dash_html_components.
 
-![Example of a number input field and a dropdown menu](https://github.com/neharana4486/covid_public/blob/main/example.JPG?raw=true)
+![Example of a number input field and a dropdown menu](https://github.com/neharana4486Heart-Disease-Prediction-with-UCI-heart-disease-dataset/blob/main/example.JPG?raw=true)
 
 In order to allow the user to trigger the callback when filling in the form has been completed, a submit button was added to the layout. The html.button component has an n_clicks i.e., number of clicks property, which was used to create the second part of the callback, where the output was defined (29).
 
 When the button is clicked, so the number of clicks is above 0, the database is read, and the prediction is carried out. The MLP classifier uses the values entered by the user through the interface of our web application and runs the algorithm in order to predict the presence/absence of cardiovascular disease. MinMaxScaler was used for normalization of the data. Until all the values are entered the user is reminded to enter the missing values and calculation cannot be carried out. Then, the system shows the prediction 0 or 1.
-
-![Submit button and prediction](https://github.com/neharana4486/covid_public/blob/main/button.JPG?raw=true)
-
